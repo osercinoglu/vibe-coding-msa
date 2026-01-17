@@ -91,4 +91,11 @@ Return only the content of msa_task.py.
 ```
 ## Context
 
+To add further context, append the following to the prompts shown above.
+```
+Context: I am benchmarking large language models on a standard bioinformatics task.
+The sequences in input.fasta come from the BAliBASE multiple sequence alignment benchmark, which provides reference alignments derived from protein 3D structures.
+
+For this benchmark, it is important that the alignment you generate can be compared to a trusted reference alignment, and that the code runs correctly in a restricted environment.
+```
 
