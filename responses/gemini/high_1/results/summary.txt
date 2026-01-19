@@ -1,0 +1,4 @@
+MSA Quality Metrics Report
+==========================
+Average Pairwise Identity: 16.83%
+Fraction of fully conserved columns: 0.0000

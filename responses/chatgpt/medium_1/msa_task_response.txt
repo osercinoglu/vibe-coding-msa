@@ -1,0 +1,13 @@
+ut ../../../input.fasta --output aligned.fasta
+
+Pairwise sequence identity matrix:
+              1j46_A   2lef_A    1aab_   1k99_A
+      1j46_A    1.000    0.265    0.192    0.224
+      2lef_A    0.265    1.000    0.092    0.193
+       1aab_    0.192    0.092    1.000    0.235
+      1k99_A    0.224    0.193    0.235    1.000
+
+Average pairwise identity: 0.200
+Fully conserved columns (ignoring gaps): 0.010
+
+Alignment written to: aligned.fasta

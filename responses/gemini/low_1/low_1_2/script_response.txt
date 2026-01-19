@@ -1,0 +1,8 @@
+Running MAFFT on input.fasta...
+
+--- Alignment Summary ---
+Number of sequences: 4
+Alignment Length:    99
+Average Pairwise Identity: 17.17%
+
+Alignment saved to 'aligned_output.fasta'

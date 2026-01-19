@@ -1,0 +1,25 @@
+Read 4 sequences from input.fasta
+  1aab_: length 83
+  1j46_A: length 85
+  1k99_A: length 91
+  2lef_A: length 86
+Running: muscle -align input.fasta -output alignment.fasta
+Alignment written to alignment.fasta
+Alignment has 96 columns
+
+Consensus sequence:
+MKKLKXXPDXPKKPXNAXXXFXXEXRAKXAKEHPXASMXNSEISKILXXRWKXLSEKEKXKXXQXAQKEKXXHERXYPXYXXRXNYGXXKIXXXXK
+
+Pairwise sequence identities:
+  1j46_A vs 2lef_A: 26.5%
+  1j46_A vs 1aab_: 19.2%
+  1j46_A vs 1k99_A: 22.4%
+  2lef_A vs 1aab_: 9.2%
+  2lef_A vs 1k99_A: 19.3%
+  1aab_ vs 1k99_A: 23.5%
+
+Mean pairwise identity: 20.0%
+
+Mean column conservation: 0.532
+First 20 column conservation values:
+0.75, 0.67, 1.00, 1.00, 1.00, 0.50, 0.50, 1.00, 0.67, 0.25, 0.50, 0.75, 0.50, 0.75, 0.50, 0.50, 0.50, 0.50, 0.25, 0.25

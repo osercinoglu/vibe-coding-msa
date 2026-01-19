@@ -1,0 +1,15 @@
+Number of sequences: 4
+Min length: 83
+Max length: 91
+Mean length: 86.25
+Alignment length: 96
+Pairwise identity: mean=0.188, min=0.092, max=0.253
+
+Pairwise identity matrix:
+        1aab_   1j46_A  1k99_A  2lef_A
+1aab_   0.00    0.19    0.20    0.09
+1j46_A  0.19    0.00    0.21    0.25
+1k99_A  0.20    0.21    0.00    0.18
+2lef_A  0.09    0.25    0.18    0.00
+
+Mean column conservation (0–1): 0.524

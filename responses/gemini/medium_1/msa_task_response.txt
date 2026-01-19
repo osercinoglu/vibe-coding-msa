@@ -1,0 +1,12 @@
+
+--- Pairwise Sequence Identity Matrix ---
+         1aab_  1j46_A  1k99_A  2lef_A
+1aab_   0.8557  0.1443  0.1031  0.1959
+1j46_A  0.1443  0.7938  0.0825  0.0722
+1k99_A  0.1031  0.0825  0.8041  0.0928
+2lef_A  0.1959  0.0722  0.0928  0.8866
+
+Average Pairwise Identity: 0.1151
+Fraction of fully conserved columns: 0.0000
+
+Alignment saved to: aligned.fasta

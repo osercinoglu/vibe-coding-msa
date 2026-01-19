@@ -1,0 +1,8 @@
+Validating ../../../input.fasta...
+Running Multiple Sequence Alignment...
+Alignment saved to results/aligned.fasta
+Metrics report saved to results/alignment_report.csv and results/summary.txt
+
+Summary:
+ - Avg Identity: 16.83%
+ - Conservation: 0.00%

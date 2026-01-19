@@ -1,0 +1,13 @@
+Number of sequences: 4
+Min length: 83
+Max length: 91
+Mean length: 86.25
+
+Pairwise identity matrix (ungapped, truncated to shortest):
+	1aab_	1j46_A	1k99_A	2lef_A
+1aab_	0.00	0.05	0.08	0.06
+1j46_A	0.05	0.00	0.14	0.07
+1k99_A	0.08	0.14	0.00	0.09
+2lef_A	0.06	0.07	0.09	0.00
+
+Pairwise identity: mean=0.083, min=0.048, max=0.141

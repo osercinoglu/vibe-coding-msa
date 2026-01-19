@@ -1,0 +1,6 @@
+I've created a complete multiple sequence alignment analysis for your 4 protein sequences. Here's what you get:
+Your Results:
+
+Alignment created showing how all 4 sequences align with gaps
+Pairwise similarity: Your sequences are fairly diverse, ranging from ~6-22% identity
+Conservation analysis: 41.7% average conservation, with 2 highly conserved positions and 46 moderately conserved ones

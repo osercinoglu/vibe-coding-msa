@@ -1,0 +1,11 @@
+Pairwise_identity_matrix
+,1j46_A,2lef_A,1aab_,1k99_A
+1j46_A,1.000000,0.265060,0.192308,0.223529
+2lef_A,0.265060,1.000000,0.092105,0.192771
+1aab_,0.192308,0.092105,1.000000,0.234568
+1k99_A,0.223529,0.192771,0.234568,1.000000
+
+Summary_metrics
+Metric,Value
+Average_pairwise_identity,0.200057
+Fraction_fully_conserved_columns,0.104167

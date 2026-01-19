@@ -1,0 +1,6 @@
+MSA Summary Statistics
+======================
+
+Number of sequences: 4
+Average pairwise identity: 0.4000
+Fraction fully conserved columns: 0.0104

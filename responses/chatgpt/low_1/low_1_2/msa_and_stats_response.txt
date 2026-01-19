@@ -1,0 +1,19 @@
+Running MUSCLE...
+Alignment written to aligned.fasta
+
+Number of sequences: 4
+Alignment length: 96
+
+Pairwise percent identity statistics:
+  Mean: 20.01%
+  Std:  5.44%
+  Min:  9.21%
+  Max:  26.51%
+
+Pairwise identities:
+1j46_A vs 2lef_A: 26.51%
+1j46_A vs 1aab_: 19.23%
+1j46_A vs 1k99_A: 22.35%
+2lef_A vs 1aab_: 9.21%
+2lef_A vs 1k99_A: 19.28%
+1aab_ vs 1k99_A: 23.46%

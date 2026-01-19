@@ -1,0 +1,103 @@
+#!/usr/bin/env python3
+"""
+Multiple Sequence Alignment (MSA) and Analysis Script
+Uses a progressive alignment strategy with pairwise alignment of sequences.
+"""
+
+import argparse
+import sys
+from typing import List, Tuple, Dict
+import numpy as np
+
+
+# ============================================================================
+# FASTA I/O
+# ============================================================================
+
+def read_fasta(filename: str) -> List[Tuple[str, str]]:
+    """Read a FASTA file and return list of (header, sequence) tuples."""
+    sequences = []
+    current_header = None
+    current_seq = []
+
+    try:
+        with open(filename, 'r') as f:
+            for line in f:
+                line = line.rstrip('\n')
+                if line.startswith('>'):
+(vibe_coding_msa) onur@ELROND:~/repos/vibe-coding-msa/responses/claude/medium_1$ ls
+00_START_HERE.txt  MANIFEST.txt   README.md     SUMMARY.md    aligned.fasta        msa_task.py
+INDEX.md           QUICKSTART.md  REFERENCE.md  TECHNICAL.md  claude_response.txt
+(vibe_coding_msa) onur@ELROND:~/repos/vibe-coding-msa/responses/claude/medium_1$ cd ../
+(vibe_coding_msa) onur@ELROND:~/repos/vibe-coding-msa/responses/claude$ mkdir high_1
+(vibe_coding_msa) onur@ELROND:~/repos/vibe-coding-msa/responses/claude$ cd high_1/
+(vibe_coding_msa) onur@ELROND:~/repos/vibe-coding-msa/responses/claude/high_1$ mv /mnt/c/Users/onurs/Downloads/msa_task.py $PWD
+(vibe_coding_msa) onur@ELROND:~/repos/vibe-coding-msa/responses/claude/high_1$ more msa_task.py
+#!/usr/bin/env python3
+"""
+Multiple Sequence Alignment (MSA) and Quality Metrics Computation
+
+This module performs multiple sequence alignment on homologous protein sequences
+and computes comprehensive alignment quality metrics including pairwise identity,
+conservation metrics, and alignment statistics.
+
+Author: Bioinformatics Team
+Version: 1.0
+"""
+
+import argparse
+import csv
+import logging
+import os
+import subprocess
+import sys
+import tempfile
+from pathlib import Path
+from typing import Dict, List, Tuple, Optional
+
+import numpy as np
+import pandas as pd
+
+
+# Configure logging
+(vibe_coding_msa) onur@ELROND:~/repos/vibe-coding-msa/responses/claude/high_1$ python msa_task.py -h
+usage: msa_task.py [-h] --input INPUT [--outdir OUTDIR]
+
+Multiple Sequence Alignment and Quality Metrics
+
+options:
+  -h, --help           show this help message and exit
+  --input, -i INPUT    Input FASTA file with protein sequences
+  --outdir, -o OUTDIR  Output directory for results (default: msa_output)
+
+Examples:
+  python msa_task.py --input sequences.fasta --outdir ./results
+  python msa_task.py -i sequences.fasta -o /tmp/msa_output
+
+(vibe_coding_msa) onur@ELROND:~/repos/vibe-coding-msa/responses/claude/high_1$ python msa_task.py --input ../../../input.fasta --outdir results
+2026-01-19 05:07:39,601 - INFO - Reading input from ../../../input.fasta
+2026-01-19 05:07:39,601 - INFO - Input validation passed: 4 sequences found
+2026-01-19 05:07:39,602 - INFO - Output directory: results
+2026-01-19 05:07:39,602 - INFO - Loaded 4 sequences
+2026-01-19 05:07:39,602 - INFO - Starting multiple sequence alignment...
+2026-01-19 05:07:39,605 - ERROR - MUSCLE failed:
+
+Invalid command line
+Unknown option in
+
+
+2026-01-19 05:07:39,621 - INFO - Clustal Omega alignment completed successfully
+2026-01-19 05:07:39,621 - INFO - Alignment complete: 4 sequences aligned
+2026-01-19 05:07:39,621 - INFO - Computing alignment quality metrics...
+2026-01-19 05:07:39,621 - INFO - Generating reports...
+2026-01-19 05:07:39,623 - INFO - Identity matrix saved to results/identity_matrix.csv
+2026-01-19 05:07:39,623 - INFO - Metrics report saved to results/alignment_report.txt
+2026-01-19 05:07:39,624 - INFO - Summary report saved to results/summary_metrics.csv
+2026-01-19 05:07:39,624 - INFO - Results saved to results
+2026-01-19 05:07:39,624 - INFO - ======================================================================
+2026-01-19 05:07:39,624 - INFO - SUMMARY:
+2026-01-19 05:07:39,624 - INFO -   Sequences:              4
+2026-01-19 05:07:39,624 - INFO -   Alignment length:       96
+2026-01-19 05:07:39,624 - INFO -   Avg pairwise identity:  20.66%
+2026-01-19 05:07:39,624 - INFO -   Conserved columns:      10.42%
+2026-01-19 05:07:39,624 - INFO - ======================================================================
