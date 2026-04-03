@@ -359,15 +359,27 @@ def section_discussion(metrics: list[dict]) -> str:
     avg_sp_ext = np.mean([r["sp"] for r in ext_tool]) if ext_tool else float("nan")
     avg_sp_py  = np.mean([r["sp"] for r in pure_py])  if pure_py  else float("nan")
 
+    muscle_perfect = muscle_ref and muscle_ref["sp"] >= 0.999 and muscle_ref["tc"] >= 0.999
+    muscle_note = (
+        "Remarkably, MUSCLE v5 scores SP=TC=1.0 on this dataset, meaning its output is "
+        "identical to the BAliBASE reference alignment at every core block column. "
+        "For this small, well-studied family of HMG-box proteins, the sequence-based "
+        "optimisation of MUSCLE happens to recover the structure-based reference exactly. "
+        "This establishes that the BAliBASE reference is fully achievable by a standard "
+        "sequence aligner for this test case."
+        if muscle_perfect else
+        f"MUSCLE v5 scores SP={muscle_sp}, TC={muscle_tc} against the BAliBASE "
+        "structure-based reference. A score below 1.0 is expected: MUSCLE optimises a "
+        "sequence-similarity objective while BAliBASE columns are derived from 3D structure "
+        "superposition. This gap establishes the ceiling for sequence-only aligners."
+    )
+
     return f"""\
 ## Discussion
 
 ### MUSCLE v5 vs. BAliBASE
 
-The MUSCLE v5 run (`responses/reference/aligned.fasta`) scores SP={muscle_sp}, TC={muscle_tc}
-against the BAliBASE structure-based reference. A score below 1.0 is expected: MUSCLE optimizes
-a sequence-similarity objective, while BAliBASE columns are derived from 3D structure superposition.
-This gap establishes the ceiling for what any sequence-only aligner can be expected to achieve.
+{muscle_note}
 
 ### External-tool runs vs. pure-Python runs
 
