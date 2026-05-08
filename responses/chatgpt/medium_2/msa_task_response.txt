@@ -1,0 +1,26 @@
+
+muscle 5.3.linux64 []  20.5Gb RAM, 12 cores
+Built Jul 30 2025 21:13:04
+(C) Copyright 2004-2021 Robert C. Edgar.
+https://drive5.com
+
+[align ../../../input.fasta]
+Input: 4 seqs, avg length 86, max 91, min 83
+
+00:00 8.3Mb   100.0% Derep 4 uniques, 0 dupes
+00:00 8.3Mb  CPU has 12 cores, running 12 threads
+00:00 168Mb   100.0% Calc posteriors
+00:00 436Mb   100.0% UPGMA5
+00:00 436Mb   100.0% Consistency (1/2)
+00:00 436Mb   100.0% Consistency (2/2)
+00:00 436Mb   100.0% Refining
+
+Pairwise identity matrix:
+        1j46_A  2lef_A  1aab_  1k99_A
+1j46_A   1.000   0.265  0.192   0.224
+2lef_A   0.265   1.000  0.092   0.193
+1aab_    0.192   0.092  1.000   0.235
+1k99_A   0.224   0.193  0.235   1.000
+
+Average pairwise identity: 0.200
+Fraction of fully conserved columns: 0.104

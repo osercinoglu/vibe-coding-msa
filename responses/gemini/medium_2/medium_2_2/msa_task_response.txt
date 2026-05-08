@@ -1,0 +1,4 @@
+  File "/home/onur/repos/vibe-coding-msa/responses/gemini/medium_2/medium_2_2/msa_task.py", line 7
+    [cite_start]"""Reads FASTA file[cite: 1]."""
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: invalid syntax

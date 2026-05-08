@@ -1,0 +1,7 @@
+ERROR during alignment: MUSCLE failed:
+
+
+Invalid command line
+Unknown option in
+
+

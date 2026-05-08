@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/home/onur/repos/vibe-coding-msa/responses/gemini/high_2/high_2_2/msa_task.py", line 169, in <module>
+    main()
+    ~~~~^^
+  File "/home/onur/repos/vibe-coding-msa/responses/gemini/high_2/high_2_2/msa_task.py", line 136, in main
+    raw_sequences = parse_fasta(args.input) [cite: 1]
+                                             ^^^^
+NameError: name 'cite' is not defined. Did you mean: 'aiter'?

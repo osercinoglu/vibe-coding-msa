@@ -1,0 +1,7 @@
+Starting alignment for 4 sequences...
+Error during alignment:
+
+Invalid command line
+Unknown option in
+
+

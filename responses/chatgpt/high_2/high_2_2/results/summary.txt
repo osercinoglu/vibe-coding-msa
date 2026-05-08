@@ -1,0 +1,2 @@
+Average pairwise identity: 0.2001
+Fraction of fully conserved columns: 0.1042

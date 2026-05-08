@@ -1,0 +1,4 @@
+ERROR: MUSCLE alignment failed with exit code 1.
+Command: muscle align -i /tmp/tmpvqrt52tk/input.fasta -o results/aligned.fasta
+Error output (truncated):
+Invalid command line Expected -option_name or --option_name, got 'align

@@ -1,0 +1,10 @@
+
+### Pairwise Sequence Identity Matrix ###
+        1aab_  1j46_A  1k99_A  2lef_A
+1aab_   1.000   0.301   0.234   0.200
+1j46_A  0.301   1.000   0.104   0.172
+1k99_A  0.234   0.104   1.000   0.135
+2lef_A  0.200   0.172   0.135   1.000
+
+Average Pairwise Identity: 0.1911
+Fraction of Fully Conserved Columns: 0.0103

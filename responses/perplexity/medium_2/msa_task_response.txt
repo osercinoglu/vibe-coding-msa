@@ -1,0 +1,8 @@
+Pairwise sequence identity matrix (rows/cols in input order):
+[[1.    0.451 0.394 0.35 ]
+ [0.451 1.    0.319 0.323]
+ [0.394 0.319 1.    0.381]
+ [0.35  0.323 0.381 1.   ]]
+
+Average pairwise identity: 0.3695
+Fraction of fully conserved alignment columns: 0.2966

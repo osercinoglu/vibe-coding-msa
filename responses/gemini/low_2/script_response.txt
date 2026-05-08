@@ -1,0 +1,12 @@
+Loaded 4 sequences.
+
+Multiple Sequence Alignment produced successfully.
+
+--- Percentage Identity Matrix ---
+         1aab_  1j46_A  1k99_A  2lef_A
+1aab_   100.00   21.88   19.79   10.42
+1j46_A   21.88  100.00   23.96   30.21
+1k99_A   19.79   23.96  100.00   17.71
+2lef_A   10.42   30.21   17.71  100.00
+
+Alignment Length: 96
